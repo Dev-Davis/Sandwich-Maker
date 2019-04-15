@@ -1,9 +1,16 @@
-/* body {
-    background-color: lightseagreen;
+body, h1{
+    /* background-color: lightseagreen; */
     margin: 10px;
 }
 
 .row {
     margin: 3px;
-} */
+}
+
+#meats {
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 7px;
+    padding: 10px;
+}
 
