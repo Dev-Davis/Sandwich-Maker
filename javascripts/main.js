@@ -1,7 +1,9 @@
-import printToDom from './helpers/util.js';
-import store from './components/store.js';
+import sandwich from './components/checkout';
+
+document.getElementById('damage').addEventListener('click', sandwich.buildSandwich);
 
 const init = () => {
-    store.makeShop();
+  buildSandwich();
 }
 init();
+

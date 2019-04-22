@@ -1,6 +1,6 @@
 body, h1{
     /* background-color: lightseagreen; */
-    margin: 10px;
+    margin: 0px;
 }
 
 .row {
@@ -10,7 +10,23 @@ body, h1{
 #meats {
     border: 1px solid black;
     margin: 10px;
-    border-radius: 7px;
+    border-radius: 3px;
     padding: 10px;
+    box-shadow: 7px 7px 9px gray;
+}
+
+.bell {
+    font-size: 14px;
+}
+
+.title-name {
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    text-shadow: 1px 1px 5px red;
+}
+
+.title {
+    text-align: center;
 }
 
