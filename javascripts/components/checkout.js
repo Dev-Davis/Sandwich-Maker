@@ -1,28 +1,32 @@
-import meat from './meats';
-import print from './../helpers/util';
+import meats from './meats.js';
+import util from './../helpers/util.js';
 
 let basket = [];
 
 const getMeat = () => {
   const meats = document.querySelectorAll('input[name = meat]:checked');
   meats.forEach((meat) => {
-    cart.push(meatChecker.plusMeat(meat.id));
+    basket.push(meats.addMeat(meat.id));
   })
 };
 
 const makeSandwich = () => {
-  const afterDamage = basket.reduce((a, b) => {return a + b.price}, )
+  const afterDamage = basket.reduce((a, b) => {return a + b.price}, 0);
   let sandString = '';
-  sandString = '<div class="col-4">'
-  sandString = '<div>Here is Your Sandwich</div>'
-  sandString = `<div>Meat: $${meat}</div>`
-  sandString = '</div>'
-  print.printToDom('finalOrder', sandString);
+    basket.forEach((item) => {
+    sandString += '<div class="col-4">';
+    sandString += '<div>Ticket: </div>';
+    sandString += '</div>';
+    sandString += `<div> $${item.type}</div>`;  
+  })
+  
+  util.printToDom('finalOrder', sandString);
 }
 
-const sandwichItems = (e) => {
-  e.preventDefault();
-  addMeat();
+const sandwichItems = () => {
+  basket = [];
+  getMeat();
+  makeSandwich();
 }
 
-export default { buildSandwich };
+export default { sandwichItems };

@@ -1,9 +1,8 @@
-import sandwich from './components/checkout';
+import sandwich from './components/checkout.js';
 
-document.getElementById('damage').addEventListener('click', sandwich.buildSandwich);
+document.getElementById('damage').addEventListener('click', sandwich.sandwichItems);
 
 const init = () => {
-  buildSandwich();
+  sandwich.sandwichItems();
 }
 init();
-
