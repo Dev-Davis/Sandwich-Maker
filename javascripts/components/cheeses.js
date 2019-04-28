@@ -1,4 +1,4 @@
-const cheeses = {
+const cheeseInfo = {
     american: 0.50,
     cheddar: 0.50,
     swiss: 0.50,
@@ -6,8 +6,13 @@ const cheeses = {
     provolone: 0.50
 }
 
-const getCheeses = () => {
-    return cheeses;
+const addCheese = (cheese) => {
+    const plusCheese = {
+        name: cheese,
+        price: cheeseInfo[cheese],
+        type: 'cheese'
+    }
+    return plusCheese;
 }
 
-export default { getCheeses };
+export default { addCheese };
