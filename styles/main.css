@@ -1,6 +1,7 @@
 body, h1{
-    /* background-color: lightseagreen; */
-    margin: 10px;
+    background:url(http://www.westchestermagazine.com/Blogs/Eat-Drink-Post/November-2015/6-Out-Of-This-World-Crazy-Delicious-Westchester-Sandwiches/stocksammy.jpg);
+    background-size: cover;
+    margin: 0px;
 }
 
 .row {
@@ -10,7 +11,42 @@ body, h1{
 #meats {
     border: 1px solid black;
     margin: 10px;
-    border-radius: 7px;
+    border-radius: 3px;
     padding: 10px;
+    box-shadow: 7px 7px 9px black;
+    background-color: silver;
 }
 
+.bell {
+    font-size: 14px;
+}
+
+.title-name {
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid black; */
+    text-shadow: 1px 1px 5px red;
+}
+
+.title {
+    text-align: center;
+}
+
+.col-4, .boxes {
+    padding-top: 50px;
+}
+.test > *{
+    text-transform: capitalize;
+}
+
+.choose {
+    font-size: 28px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 6px white;
+}
+
+table {
+    background-color: silver;
+    box-shadow: 10px 10px 13px black;
+    border: 1px solid black;
+}

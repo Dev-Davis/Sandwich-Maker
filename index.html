@@ -7,21 +7,141 @@
     <title>Sandwich Maker</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker" rel="stylesheet">
+
 </head>
 <body>
     
-    <h1>Helga's Hoagies</h1>
     <div class="row">
-    <div id="meats" class="col-6"></div>
+        <h1 class="col-12 text-center title-name">Good Ass Sandwiches</h1   class="col-12">
+    <div class="row">
 
-    <div id="breads" class="col-6"></div>
+    <div id="bread-box" class="col-3">
+        <h5 class="title choose">Select Your Bread</h3>
+        <div id="meats">
+            <input type="radio" name="bread" id="white">
+            <label for="white">White</label>
+            <br>
+            <input type="radio" name="bread" id="wheat">
+            <label for="wheat">Wheat</label>
+            <br>
+            <input type="radio" name="bread" id="rosemary">
+            <label for="rosemary">Rosemary</label>
+            <br>
+            <input type="radio" name="bread" id="italian">
+            <label for="italian">Italian</label>
+            <br>
+            <input type="radio" name="bread" id="honeyOat">
+            <label for="honeyOat">Honey Oat</label>
+            <br>
+            <input type="radio" name="bread" id="roastedGarlic">
+            <label for="roastedGarlic">Roasted Garlic</label>
+        </div>
+    </div>
 
-    <div id="cheese" class="col-6"></div>
+    <div id="meat-box" class="col-3">
+        <h5 class="title choose">Select Your Meats</h3>
+        <div id="meats">
+            <input type="checkbox" name="meat" id="chicken">
+            <label for="chicken">Chicken</label>
+            <br>    
+            <input type="checkbox" name="meat" id="ham">
+            <label for="ham">Ham</label>
+            <br>
+            <input type="checkbox" name="meat" id="salami">
+            <label for="salami">Salami</label>
+            <br>
+            <input type="checkbox" name="meat" id="beef">
+            <label for="beef">Beef</label>
+            <br>
+            <input type="checkbox" name="meat" id="bologna">
+            <label for="bologna">Bologna</label>
+            <br>
+            <input type="checkbox" name="meat" id="turkey">
+            <label for="turkey">Turkey</label>
+        </div>
+    </div>
 
-    <div id="veggies" class="col-6"></div>
 
-    <div id="condiments" class="col-6"></div>
+    <div id="cheese-box" class="col-3">
+        <h5 class="title choose">Select Your Cheese</h3>
+        <div id="meats">
+            <input type="checkbox" name="cheese" id="american">
+            <label for="american">American</label>
+            <br>
+            <input type="checkbox" name="cheese" id="provolone">
+            <label for="provolone">Provolone</label>
+            <br>
+            <input type="checkbox" name="cheese" id="pepperJack">
+            <label for="pepperJack">Pepper Jack</label>
+            <br>
+            <input type="checkbox" name="cheese" id="swiss">
+            <label for="meat">Swiss</label>
+            <br>
+            <input type="checkbox" name="cheese" id="cheddar">
+            <label for="cheddar">Cheddar</label>
+        </div>
+    </div>
 
+    <div id="veggies-box" class="col-3">
+        <h5 class="title choose">Select Your Veggies</h3>
+        <div id="meats">
+            <input type="checkbox" name="veggie" id="lettuce">
+            <label for="lettuce">Lettuce</label>
+            <br>
+            <input type="checkbox" name="veggie" id="pickles">
+            <label for="pickles">Pickles</label>
+            <br>
+            <input type="checkbox" name="veggie" id="onions">
+            <label for="onions">Onions</label>
+            <br>
+            <input type="checkbox" name="veggie" id="jalapenos">
+            <label for="jalapenos">Jalapeños</label>
+            <br>
+            <input type="checkbox" name="veggie" id="tomatoes">
+            <label for="tomatoes">Tomatoes</label>
+            <br>
+            <input type="checkbox" name="veggie" id="spinach">
+            <label for="spinach">Spinach</label>
+            <br>
+            <input type="checkbox" name="veggie" id="bananaPeppers">
+            <label for="bananaPeppers"><span class="bell">Banana Peppers</span></label>
+        </div>
+    </div>
+
+    <div id="condiments-box" class="col-3">
+        <h5 class="title choose">Select Your Condiments</h3>
+        <div id="meats">
+            <input type="checkbox" name="condiments" id="mayo">
+            <label for="mayo">Mayo</label>
+            <br>
+            <input type="checkbox" name="condiments" id="honeyMustard">
+            <label for="honeyMustard">Honey Mustard</label>
+            <br>
+            <input type="checkbox" name="condiments" id="mustard">
+            <label for="mustard">Mustard</label>
+            <br>
+            <input type="checkbox" name="condiments" id="chipotle">
+            <label for="chipotle">Chipotle</label>
+            <br>
+            <input type="checkbox" name="condiments" id="sweetOnion">
+            <label for="sweetOnion">Sweet Onion</label>
+            <br>
+            <input type="checkbox" name="condiments" id="ranch">
+            <label for="ranch">Ranch</label>
+        </div>
+    </div>
+    
+    <div class="row col-12"> 
+        <div class="btn btn-success center-block col-12" id="damage">Damage</div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-5"></div>
+    <div id="finalOrder" class="test"></div>
+            
+        </div>
     </div>
 
     <script type="module" src="./javascripts/main.js"></script>

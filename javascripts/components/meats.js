@@ -1,5 +1,5 @@
 
-const meats = {
+const meatInfo = {
     chicken: 1.25,
     ham: 1.00,
     salami: 1.00,
@@ -8,8 +8,13 @@ const meats = {
     turkey: 1.00
 };
 
-const getMeats = () => {
-    return meats;
+const addMeat = (meat) => {
+    const plusMeat = {
+        name: meat,
+        price: meatInfo[meat],
+        type: 'meat'
+    }
+    return plusMeat;
 };
 
-export default { getMeats };
+export default { addMeat };

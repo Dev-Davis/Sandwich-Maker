@@ -1,13 +1,20 @@
-const breads = {
-    white: 0.75,
-    wheat: 0.75,
-    italian: 0.85,
-    flatbread: 0.85,
-    parmesan_oregano: 1.00
-}
 
-const getBreads = () => {
-    return breads;
-} 
+const breadInfo = {
+    white: 1.00,
+    wheat: 1.25,
+    rosemary: 1.15,
+    italian: 1.00,
+    honeyOat: 1.15,
+    roastedGarlic: 1.15
+};
 
-export default { getBreads };
+const addBread = () => {
+    const plusBread = {
+        name: bread,
+        price: breadInfo[bread],
+        type: 'bread'
+    }
+    return plusBread;
+};
+
+export default { addBread };
