@@ -9,12 +9,7 @@ const breadInfo = {
 };
 
 const addBread = () => {
-    const plusBread = {
-        name: bread,
-        price: breadInfo[bread],
-        type: 'bread'
-    }
-    return plusBread;
+    return bread;
 };
 
 export default { addBread };
