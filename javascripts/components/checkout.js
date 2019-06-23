@@ -62,7 +62,7 @@ const makeSandwich = () => {
     sandString += '</tr>';
   })
   sandString += '<tr>';
-  sandString += `<td>$${afterDamage.toFixed(2)}</td>`;
+  sandString += `<td><h5>Total:</h5> ${afterDamage.toFixed(2)}</td>`;
   sandString += '</tr>';
   sandString += '</div">';
 util.printToDom('finalOrder', sandString);
